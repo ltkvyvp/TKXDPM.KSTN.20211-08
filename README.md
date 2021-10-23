@@ -20,7 +20,7 @@
 # Lab 01 - Software Architectural Design :
 
 ## Tasks 
-1. Complete interaction diagram, Analysis Class Diagram for the following use cases:
+1. Complete Interaction Diagram, Analysis Class Diagram for the following use cases:
 - Rent Bike
 - Return Bike
 - View Bike in Station
