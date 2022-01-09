@@ -1,0 +1,3 @@
+.Button#rentBikeBtn:hover{
+    -fx-background-color: linear-gradient(#62fc03, #03fc9d);
+}
