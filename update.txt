@@ -1,0 +1,29 @@
+- Thêm Ebike, TwinBike, NormalBike kế thừa Bike có 2 phương thức getBasicInfo và getAdvanceInfo
++ BasicInfo: 
+- bikeName
+- status
+- initCost
+- costPerQuarterHour
+- Category
+- dockId
+- bikeTypeName => "NormalBike", "Ebike", "TwinBike"
+- ImagePath
++ AdvanceInfo:
+* EBike: pin
+* NormalBike: null
+* TwinBike: null
+- Sửa BikeDetailScreenHandler/RentBikeSCreenHandler/ReturnBikeScreenHandler để tránh được control coupling
+- Thêm getBike() trong accessor và khi query Bike gọi tới getBike để trả về instance của các loại Bike
+- Thêm TypeBikeCostCalculator extends SimpleCostCalculator
+- Thêm calculateDeposit trong RentBikeController dùng reflection
+- Dùng reflection trong calculateCost trong ReturnBikeController
+
+- Sửa repo:
++) FinalProject/Construction/Sourcecode
++) FinalProject/Construction/javadoc
++) FinalProject/Demo/Hướng dẫn cài đặt.txt
++) FinalProject/Design/EcoBikeSDD.docx
++) FinalProject/Design/AstahFile
+
+
+
