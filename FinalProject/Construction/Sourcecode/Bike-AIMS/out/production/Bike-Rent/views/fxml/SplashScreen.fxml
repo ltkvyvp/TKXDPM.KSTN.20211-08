@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" prefHeight="750.0" prefWidth="1150.0" style="-fx-background-image: url('../../../assets/images/foot_background.jpg')" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.screen.SplashScreenHandler">
+   <children>
+      <ImageView fx:id="logo" blendMode="MULTIPLY" fitHeight="150.0" fitWidth="200.0" layoutX="475.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/images/logo.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
