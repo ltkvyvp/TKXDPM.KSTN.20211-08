@@ -18,3 +18,8 @@ Máy tính tối thiểu 4GB RAM, hệ điều hành window/MACOS/Ubuntu
 - Sử dụng hệ CSDL MySQL
 - Cài đặt MySql Workbench/Datagrip và MySql Server
 - Run file bike-rental.sql trong sourcecode package /assets/db/bike_rental.sql
+
+4. Trước khi chạy Bike-AIMS cần chạy barcode server để khởi tạo api chuyển hoá barcode thành mã xe:
+- Command:
++ cd barcode/server
++ flask run
