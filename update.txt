@@ -1,17 +1,11 @@
 - Thêm Ebike, TwinBike, NormalBike kế thừa Bike có 2 phương thức getBasicInfo và getAdvanceInfo
 + BasicInfo: 
-- bikeName
-- status
-- initCost
-- costPerQuarterHour
-- Category
-- dockId
+- bikeName, status, initCost, costPerQuarterHour, Category, dockId, ImagePath
 - bikeTypeName => "NormalBike", "Ebike", "TwinBike"
-- ImagePath
 + AdvanceInfo:
 * EBike: pin
-* NormalBike: null
-* TwinBike: null
+* NormalBike: none
+* TwinBike: none
 - Sửa BikeDetailScreenHandler/RentBikeSCreenHandler/ReturnBikeScreenHandler để tránh được control coupling
 - Thêm getBike() trong accessor và khi query Bike gọi tới getBike để trả về instance của các loại Bike
 - Thêm TypeBikeCostCalculator extends SimpleCostCalculator
@@ -19,11 +13,19 @@
 - Dùng reflection trong calculateCost trong ReturnBikeController
 
 - Sửa repo:
-+) FinalProject/Construction/Sourcecode
++) FinalProject/Construction/Sourcecode:
+	- package Entity: Bike/EBike/NormalBike/TwinBike
+	- package View: BikeDetailScreenHandler/RentBikeScreenHandler/ReturnBikeScreenHandler
+	- package Controller: RentBikeController/ReturnBikeController/(package) calculator
+	- package Accessor: BikeAccessor 
 +) FinalProject/Construction/javadoc
-+) FinalProject/Demo/Hướng dẫn cài đặt.txt
-+) FinalProject/Design/EcoBikeSDD.docx
-+) FinalProject/Design/AstahFile
++) FinalProject/Design/EcoBikeSDD.docx:
+	- Screen Transition Diagram
+	- Class Design/ Class Detail Specification: General Class Diagram, Class Detail Diagram
+	- Design Considerations: Coupling, Design Principles
++) FinalProject/Design/AstahFile:
+	- General Class Diagram
+	- Package Diagram
 
 
 
